@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Tutorial</title>
+
+ <!-- External Css : -->
+<link rel="stylesheet" href="Css01.css">
+    
+ <!-- Internal Css : , !important for overwriting-->
+     <style>
+
+        p{
+            border: 2px solid orangered;
+        }
+
+         /* Id Selectors */
+        #firstpara{
+            color: tomato;
+        }
+
+        /* Class Selectors */
+        .redElement{ color: blue;
+        }
+        .bgYellow{
+           background-color: yellow ; 
+        }
+
+        /* Grouping Selectors */
+        footer, span{
+            background-color: red;
+        }
+    </style>
+
+</head>
+<body>
+    <h3>CSS TUTORIAL</h3>
+    <!-- Inline Css : <p style="color: red; background-color: yellow;">This is Css tutorial.We will be learning CSS.</p> -->
+    <p>This is Css tutorial.We will be learning CSS.</p>
+
+    <h3>CSS Selectors</h3>
+    <p id="firstpara"> A paragraph to display css selectors.</p>
+    <p id="secondpara" class="redElement bgYellow"> This is another paragraph for css selectors.</p>
+    <div> 
+        <p>another paragraph.</p>
+        <span>This is span.</span>
+    </div>
+    <footer>This is a footer.</footer>
+</body>
+</html>

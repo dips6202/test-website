@@ -1,0 +1,230 @@
+<!-- HTML BASICS-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="This is description">
+  <meta name="keywords" content="html, html tutorials">
+  <meta name="robots" content="INDEX, FOLLOW">
+  <title>deepika</title>
+
+  <!-- include external css-->
+  <link rel="stylesheet" href="deepika.css">
+
+  <!-- include external javascript -->
+  <script src="deepika.js"></script>
+
+
+</head>
+
+<body>
+  <!-- heading tags -->
+  <h1>DEEPIKA</h1>
+  <h2>DEEPIKA</h2>
+  <h3>DEEPIKA</h3>
+  <h4>DEEPIKA</h4>
+  <h5>DEEPIKA</h5>
+  <h6>DEEPIKA</h6>
+
+  <!-- lorem40 for a paragraph   , strong,b for bold , em for emphasised, i for italic -->
+  <P>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores rem, doloremque ipsum fugit expedita consequatur
+    consequuntur recusandae<strong> you are strong </strong> dignissimos molestias voluptatem praesentium<em> you are
+      emphasised </em> nisi autem perspiciatis, corrupti , <b>BOLD</b> asperiores <i>ITALIC</i> nulla itaque cum numquam
+    odio enim voluptatibus soluta. Quaerat minima autem ducimus sapiente! </P>
+
+  <!--  p*4 for four paragraphs , br for new line , hr for horizontal, ctrl+enter for new line -->
+  <p> first para <br>This is a new line</p>
+  <hr>
+  <p> second para </p>
+  <p> third para </p>
+  <p> fourth </p>
+
+  <!-- Links , a is a tag & href,target is an attribute, target for opening in a new tab -->
+  <a href="https:google.com" target="-blank">Go to google</a><br>
+  <a href="https:twitter.com" target="-blank">Go to twitter</a><br>
+  <a href="deepika1.html" target="-blank">My tutorial</a><br>
+
+  <!-- Images,if img not present alt text will be shown -->
+  <img src=" https://source.unsplash.com/WLUHO9A_xik/200x100" alt="Error">
+  <img src=" https://source.unsplash.com/160x90/?nature,water" alt="Error">
+
+  <!-- list (ul-disc,square,circle)-->
+  <ul type="square">
+    <li> first item</li>
+    <li> second item</li>
+    <ul>
+      <li>another one</li>
+      <li>another two</li>
+      <li>another three</li>
+    </ul>
+    <li> third item</li>
+  </ul>
+
+  <ol type="I">
+    <li> first item</li>
+    <li> second item</li>
+    <li> third item</li>
+  </ol>
+
+  <!-- Tables-->
+
+  <h3> HTML TABLE </h3>
+  <table>
+    <thead>
+      <tr>
+        <th> Name</th>
+        <th> Emloyee id</th>
+        <th> Payment</th>
+      </tr>
+    </thead>
+
+    <tbody>
+
+      <tr>
+        <td> Deepika </td>
+        <td> RA5663728 </td>
+        <td> 780000 </td>
+      </tr>
+
+      <tr>
+        <td> Priya </td>
+        <td> RA5668810 </td>
+        <td> 380000 </td>
+      </tr>
+
+      <tr>
+        <td> Riya </td>
+        <td> RA5663728 </td>
+        <td> 280000 </td>
+      </tr>
+
+    </tbody>
+  </table>
+
+  <!-- forms-->
+
+  <h2> HTML FORMS</h2>
+  <form action="backend.php">
+    <label for="name"> Name : </label>
+    <div> 
+       <input type="text" name="myNAME" id="name">
+    </div> 
+    <br> 
+
+    <div> 
+      CLASS: <input type="text" name="myCLASS">
+   </div>
+    <br>
+    
+   <div> 
+     Email: <input type="email" name="myEmail">
+   </div>
+   <br>
+   
+   <div>
+     Date: <input type="date" name="myDate" >
+   </div>
+   <br>
+
+   <div>
+    Age: <input type="number" name="myAge" >
+  </div>
+  <br>
+  
+  <div>
+    Are you eligible: <input type="checkbox" name="myEligible" checked>
+  </div>
+  <br>
+
+  <div>
+    Gender: MALE : <input type="radio" name="myGender" > FEMALE : <input type="radio" name="myGender" > OTHER : <input type="radio" name="myGender" >
+  </div>
+  <br>
+
+  <div>
+    Write about yourself : <br> <textarea name="myText" id="" cols="30" rows="10"></textarea>
+  </div>
+  <br>
+
+  <div>
+    <label for="SUBJECT"> SUBJECT</label>
+    <select name="mySubject" id="subject">
+      <option value="comp" selected>computer</option>
+      <option value="bio">biology</option>
+      <option value="chem" >chemistry</option>
+      <option value="maths">mathematics</option>
+    </select>
+  </div>
+  <br>
+
+
+
+   <div>
+     <input type="submit" value="Submit">
+     <input type="reset"  value="Reset">
+   </div>
+
+  </form>
+
+  <!-- inline and block elements -->
+  <p style ="border: 2px solid red;"> this is a paragraph</p><p style="border: 2px solid red;"> this is a paragraph</p>
+
+  <strong style ="border: 2px solid blue;"> this is a paragraph</strong>  <a style="border: 2px solid blue;"> this is a paragraph</a>
+
+  <span style ="border: 2px solid red;"> this is a paragraph</span>   <span style ="border: 2px solid red;"> this is also a paragraph</span>
+
+ <!-- ids and classes -->
+  <h3> IDS & CLASSES</h3>
+  <div id="mainbox" class="redBg  blackBorder">
+      this is mainbox
+  </div>
+  <span class="redBg"></span>
+
+ <!-- Emmet ,ctrl+ / for comment, . is for class & # for id -->
+ <!-- span.redbg -->
+ <span class="redBg"></span>
+
+ <!-- span#mainbox   -->
+ <span id="mainbox"></span>
+
+<!-- div.redBg.blackBackground.anotherClass -->
+ <div class="redBg blackBorder anotherClass"></div>
+
+ <!-- Emment takes div class as default example .blackBackground -->
+ <div class="blackBackground"></div> 
+
+ <!-- creating multiple elements using Emmet -->
+ <!-- span.myClass.myClass.myClass -->
+ <span class="myClass myClass2 myClass3">first</span>
+ <span class="myClass myClass2 myClass3">second</span>
+ <span class="myClass myClass2 myClass3">third</span>
+ <span class="myClass myClass2 myClass3">fourth</span>
+
+ <!-- HTML ENTITIES -->
+<div class="container">
+  <p>this is a paragraph</p>
+</div>
+
+<div class="container">
+  <p>this is another &nbsp; paragraph</p>
+  <p>paragraph is written like this &lt;p&gt; </p>
+  <p>pound is written like this &pound; </p>
+  <p>copyright is written like this &copy; </p>
+  <p>fraction is written like this &frac14; </p>
+  <p>empty character is written like this &#8203; </p>
+</div>
+
+<!-- HTML Semantic Tags -->
+<h3>Semantic Elements</h3>
+<details>
+  <summary> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae repellat, ex eveniet, repudiandae necessitatibus impedit laborum harum beatae a iure voluptatum repellendus alias iste facilis assumenda, magnam nam tempora temporibus!</summary>
+  A keyboard
+</details>
+
+
+</body>
+
+</html>

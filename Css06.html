@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+    <style>
+        * {
+            box-sizing: border-box ;
+            padding: 0;
+            margin: 0;
+
+        }
+
+        body{
+            background-color: rgb(233 212 247);
+            
+        }
+     .container{
+         background-color: rgb(229, 186, 240);
+         border: 3px solid rgb(73, 22, 97);
+
+         /* padding and margin can be done in these ways */
+
+         /*padding-top: 89px; padding-bottom: 89px;
+         padding-right: 89px padding-left: 89px;*/
+
+         /* padding: 23px 56px 6px 78px;   padding & margin =top right bottom left*/ 
+
+         padding: 34px 19px;  /*  padding and margin : (y=top bottom and x= left right) ;   */
+         margin: 14px 19px;
+         border-radius: 25px;
+         width: 533px;
+           
+         }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+    <h3>This is my heading</h3>
+    <p id="first">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. A quam beatae asperiores autem cupiditate voluptates alias quibusdam expedita veniam adipisci, cum cumque quasi officia velit totam architecto unde excepturi perferendis?
+    </p> </div>  
+    
+    <div class="container">
+        <h3>This is my heading</h3>
+    <p id="second">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. A quam beatae asperiores autem cupiditate voluptates alias quibusdam expedita veniam adipisci, cum cumque quasi officia velit totam architecto unde excepturi perferendis?
+    </p>   </div>
+
+    <div class="container">
+        <h3>This is my heading</h3>
+    <p id="third">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. A quam beatae asperiores autem cupiditate voluptates alias quibusdam expedita veniam adipisci, cum cumque quasi officia velit totam architecto unde excepturi perferendis?
+    </p>   </div>
+</body>
+</html>
